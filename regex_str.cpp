@@ -41,7 +41,8 @@ QString regex_str::palindrom(QString& str){
             pal.append(word);
         }
     }
-    std::sort(pal.begin(), pal.end(), [](const QString& a, const QString& b){return a.size()<b.size();});
+    std::sort(pal.begin(), pal.end(), []
+    (const QString& a, const QString& b){return a.size()<b.size();});
 
     for(const QString& str: pal){
         result += str + " ";
