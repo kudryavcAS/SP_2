@@ -73,7 +73,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Найти в строке шестнадцатиричный идентификатор цвета</string>
+       <string>Найти шестнадцатиричные идентификаторы цвета</string>
       </property>
      </widget>
     </item>
