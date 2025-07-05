@@ -18,13 +18,13 @@ QString regex_str::color(QString& str){
     QString result;
     static const QRegularExpression color("#[0-9A-Fa-f]{6}");
 
-    result = "Шестнадцатиричные идентификаторы цвета:\n";
+    result = "Шестнадцатеричные идентификаторы цвета:\n";
     QRegularExpressionMatchIterator it = color.globalMatch(str);
     while (it.hasNext()) {
         QRegularExpressionMatch qm = it.next();
         result += qm.captured(0) + "\n";
     }
-    if(result !="Шестнадцатиричные идентификаторы цвета:\n")
+    if(result !="Шестнадцатеричные идентификаторы цвета:\n")
         return result;
     else return "Не найдено";
 }
